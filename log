@@ -146,3 +146,15 @@ sudoku.c:157:11: error: unused variable ‘nodoActual’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 7f6b0d7
+Thu 05 Oct 2023 10:37:08 PM UTC: 
+ sudoku.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:159:11: error: ‘nodoActal’ undeclared (first use in this function); did you mean ‘nodoActual’?
+  159 |     while(nodoActal != NULL){
+      |           ^~~~~~~~~
+      |           nodoActual
+sudoku.c:159:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+057e5ed

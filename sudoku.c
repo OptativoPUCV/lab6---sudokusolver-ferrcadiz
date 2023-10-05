@@ -156,8 +156,12 @@ Node* DFS(Node* initial, int* cont){
 
     Node* nodoActual = first(nodosAdyacentes);
 
-    
-    
+    while(nodoActal != NULL){
+      push(stack, nodoActual);
+      nodoActual = next(nodosAdyacentes);
+    }
+
+    (*cont)++;
   }
   
   return NULL;

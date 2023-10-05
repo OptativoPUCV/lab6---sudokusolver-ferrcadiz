@@ -54,6 +54,8 @@ int is_valid(Node* n){
         if(numerosValidos[numeroActual] == 0){
           numerosValidos[numeroActual] = 1;
         }
+        else
+          return 0;
       }
     }
   }

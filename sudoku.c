@@ -96,11 +96,13 @@ int is_valid(Node* n){
         else
           return 0;
       }
-      
-      
+    }
+    for(int k = 0 ; k < 10 ; k++){
+    numerosValidos[k] = 0;
     }
   }
 
+  
 
   
   return 1;

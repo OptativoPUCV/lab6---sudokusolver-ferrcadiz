@@ -86,3 +86,14 @@ Thu 05 Oct 2023 03:46:22 AM UTC:
  tests:  1|4
 total_score: 10/70
 2b4fd8c
+Thu 05 Oct 2023 03:49:37 AM UTC: 
+ sudoku.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:87:11: error: unused variable ‘x’ [-Werror=unused-variable]
+   87 |       int x = (k / 3) * 3 + (p / 3);
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+4a87abc

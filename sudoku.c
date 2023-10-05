@@ -86,6 +86,18 @@ int is_valid(Node* n){
     for(int p = 0 ; p < 9 ; p++){
       int x = (k / 3) * 3 + (p / 3);
       int y = (k % 3) * 3 + (p % 3);
+
+      int numeroActual = n -> sudo[x][y];
+
+      if(numeroActual != 0){
+        if(numerosValidos[numeroActual] == 0){
+          numerosValidos[numeroActual] = 1;
+        }
+        else
+          return 0;
+      }
+      
+      
     }
   }
 

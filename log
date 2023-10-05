@@ -158,3 +158,9 @@ sudoku.c:159:11: error: ‘nodoActal’ undeclared (first use in this function);
 sudoku.c:159:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 057e5ed
+Thu 05 Oct 2023 10:37:19 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|4
+total_score: 10/70
+7c5f254

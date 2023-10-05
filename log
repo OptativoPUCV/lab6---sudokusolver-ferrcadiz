@@ -31,3 +31,17 @@ sudoku.c:47:7: error: unused variable ‘numerosValidos’ [-Werror=unused-varia
 cc1: all warnings being treated as errors
 Compilation failed
 a00681e
+Thu 05 Oct 2023 03:30:03 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:51:11: error: unused variable ‘numeroActual’ [-Werror=unused-variable]
+   51 |       int numeroActual = n -> sudo[i][j];
+      |           ^~~~~~~~~~~~
+sudoku.c:47:7: error: unused variable ‘numerosValidos’ [-Werror=unused-variable]
+   47 |   int numerosValidos[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+      |       ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+69fee47

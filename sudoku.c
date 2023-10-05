@@ -119,8 +119,6 @@ List* get_adj_nodes(Node* n){
             Node* new_node = copy(n);
             pushBack(list, new_node);
           }
-          else
-            free(new_node);
         }
       }
     }

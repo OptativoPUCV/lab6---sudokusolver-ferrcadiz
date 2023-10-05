@@ -175,3 +175,14 @@ sudoku.c:116:11: error: ‘new_node’ undeclared (first use in this function)
 sudoku.c:116:11: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 7ea6ad3
+Thu 05 Oct 2023 11:58:53 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:123:18: error: ‘new_node’ undeclared (first use in this function)
+  123 |             free(new_node);
+      |                  ^~~~~~~~
+sudoku.c:123:18: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+d894610

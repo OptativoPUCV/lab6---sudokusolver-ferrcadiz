@@ -164,3 +164,14 @@ Thu 05 Oct 2023 10:37:19 PM UTC:
  tests:  1|4
 total_score: 10/70
 7c5f254
+Thu 05 Oct 2023 11:58:40 PM UTC: 
+ sudoku.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:116:11: error: ‘new_node’ undeclared (first use in this function)
+  116 |           new_node -> sudo[i][j] = k;
+      |           ^~~~~~~~
+sudoku.c:116:11: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+7ea6ad3

@@ -20,3 +20,14 @@ Thu 05 Oct 2023 03:20:19 AM UTC:
  tests:  3|3
 total_score: 25/70
 979aafb
+Thu 05 Oct 2023 03:28:49 AM UTC: 
+ sudoku.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:47:7: error: unused variable ‘numerosValidos’ [-Werror=unused-variable]
+   47 |   int numerosValidos[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+      |       ^~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a00681e

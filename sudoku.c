@@ -95,6 +95,10 @@ int is_final(Node* n){
       if(n -> sudo[i][j] == 0) return 0;
     }
   }
+
+  for(int k = 0 ; k < 9 ; k++){
+    numerosValidos[k] = 1;
+  }
   
   return 1;
 }

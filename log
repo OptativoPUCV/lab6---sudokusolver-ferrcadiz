@@ -135,3 +135,14 @@ Thu 05 Oct 2023 10:32:26 PM UTC:
  tests:  1|4
 total_score: 10/70
 2639de2
+Thu 05 Oct 2023 10:35:04 PM UTC: 
+ sudoku.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:157:11: error: unused variable ‘nodoActual’ [-Werror=unused-variable]
+  157 |     Node* nodoActual = first(nodosAdyacentes);
+      |           ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7f6b0d7

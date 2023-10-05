@@ -97,3 +97,17 @@ sudoku.c:87:11: error: unused variable ‘x’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 4a87abc
+Thu 05 Oct 2023 03:50:00 AM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘is_valid’:
+sudoku.c:88:11: error: unused variable ‘y’ [-Werror=unused-variable]
+   88 |       int y = (k % 3) * 3 + (p % 3);
+      |           ^
+sudoku.c:87:11: error: unused variable ‘x’ [-Werror=unused-variable]
+   87 |       int x = (k / 3) * 3 + (p / 3);
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+2a94620

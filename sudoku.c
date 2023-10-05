@@ -85,7 +85,7 @@ int is_valid(Node* n){
   for(int k = 0 ; k < 9 ; k++){
     for(int p = 0 ; p < 9 ; p++){
       int x = (k / 3) * 3 + (p / 3);
-      
+      int y = (k % 3) * 3 + (p % 3);
     }
   }
 

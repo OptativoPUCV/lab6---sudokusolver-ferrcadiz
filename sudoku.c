@@ -60,7 +60,7 @@ int is_valid(Node* n){
     }
   }
 
-  for(int k = 0 ; k < 9 ; k++){
+  for(int k = 0 ; k < 10 ; k++){
     numerosValidos[k] = 0;
   }
 
@@ -101,9 +101,6 @@ int is_valid(Node* n){
     numerosValidos[k] = 0;
     }
   }
-
-  
-
   
   return 1;
 }

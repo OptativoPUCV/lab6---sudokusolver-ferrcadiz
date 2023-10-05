@@ -45,3 +45,9 @@ sudoku.c:47:7: error: unused variable ‘numerosValidos’ [-Werror=unused-varia
 cc1: all warnings being treated as errors
 Compilation failed
 69fee47
+Thu 05 Oct 2023 03:32:04 AM UTC: 
+ sudoku.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ tests:  3|3
+total_score: 25/70
+fa9ddc4

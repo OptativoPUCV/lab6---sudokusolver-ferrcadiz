@@ -49,6 +49,12 @@ int is_valid(Node* n){
   for(int i = 0 ; i < 9 ; i++){
     for(int j = 0 ; j < 9 ; j++){
       int numeroActual = n -> sudo[i][j];
+
+      if(numeroActual != 0){
+        if(numerosValidos[numeroActual] == 0){
+          numerosValidos[numeroActual] = 1;
+        }
+      }
     }
   }
 

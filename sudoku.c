@@ -151,7 +151,7 @@ Node* DFS(Node* initial, int* cont){
 
     (*cont)--;
 
-    if(is_final(primerNodo)) return primerNodo;
+    if(is_final(primerNodo) == 1) return primerNodo;
 
     List* nodosAdyacentes = get_adj_nodes(primerNodo);
 

@@ -112,21 +112,17 @@ List* get_adj_nodes(Node* n){
   for(int i = 0 ; i < 9 ; i++){
     for(int j = 0 ; j < 9 ; j++){
       if(n -> sudo[i][j] == 0){
-        int encontrado = 1;
         
         for(int k = 1 ; k <= 9; k++){
-          Node* new_node = copy(n);
-          new_node -> sudo[i][j] = k;
-
-          if(is_valid(new_node)){
+          n -> sudo[i][j] = k;
+          
+          if(is_valid(n)){
+            Node* new_node = copy(n);
             pushBack(list, new_node);
           }
-          else
-            free(new_node);
-
-          break;
         }
-        if(encontrado) break;
+        n->sudo[i][j] = 0;
+        return list;
       }
     }
   }

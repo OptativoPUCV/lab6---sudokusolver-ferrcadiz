@@ -124,8 +124,9 @@ List* get_adj_nodes(Node* n){
           else
             free(new_node);
         }
-        if(encontrado) break;
+        break;
       }
+      if(encontrado) break;
     }
   }
   return list;

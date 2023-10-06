@@ -149,7 +149,7 @@ Node* DFS(Node* initial, int* cont){
     Node* primerNodo = top(stack);
     pop(stack);
 
-    (*cont)++;
+    (*cont)--;
 
     if(is_final(primerNodo)) return primerNodo;
 

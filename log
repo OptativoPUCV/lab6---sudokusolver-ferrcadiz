@@ -239,3 +239,18 @@ Fri 06 Oct 2023 12:06:15 AM UTC:
  tests:  1|4
 total_score: 10/70
 3cf489d
+Fri 06 Oct 2023 12:09:17 AM UTC: 
+ sudoku.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:115:13: error: unused variable ‘encontrado’ [-Werror=unused-variable]
+  115 |         int encontrado = 1;
+      |             ^~~~~~~~~~
+sudoku.c:129:8: error: ‘encontrado’ undeclared (first use in this function)
+  129 |     if(encontrado) break;
+      |        ^~~~~~~~~~
+sudoku.c:129:8: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+b70eb16

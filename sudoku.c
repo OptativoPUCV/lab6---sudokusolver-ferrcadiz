@@ -125,7 +125,6 @@ List* get_adj_nodes(Node* n){
       }
     }
   }
-  
   return list;
 }
 
@@ -144,13 +143,13 @@ Node* DFS(Node* initial, int* cont){
   Stack* stack = createStack();
   push(stack, initial);
 
-  (*cont) = 0;
+  *cont = 0;
 
   while(is_empty(stack) == 0){
     Node* primerNodo = top(stack);
     pop(stack);
 
-    if(is_final(primerNodo)) return primerNodo;
+    if(is_final(primerNodo) == 1) return primerNodo;
 
     List* nodosAdyacentes = get_adj_nodes(primerNodo);
 
@@ -161,7 +160,7 @@ Node* DFS(Node* initial, int* cont){
       nodoActual = next(nodosAdyacentes);
     }
 
-    (*cont)++;
+    *cont++;
   }
   
   return NULL;

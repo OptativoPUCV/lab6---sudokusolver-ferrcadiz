@@ -198,3 +198,14 @@ Fri 06 Oct 2023 12:00:36 AM UTC:
  tests:  1|4
 total_score: 10/70
 f10b66e
+Fri 06 Oct 2023 12:03:24 AM UTC: 
+ sudoku.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+sudoku.c: In function ‘DFS’:
+sudoku.c:163:5: error: value computed is not used [-Werror=unused-value]
+  163 |     *cont++;
+      |     ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+354aad3

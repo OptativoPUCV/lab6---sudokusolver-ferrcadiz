@@ -123,10 +123,11 @@ List* get_adj_nodes(Node* n){
           }
           else
             free(new_node);
+
+          break;
         }
-        break;
+        if(encontrado) break;
       }
-      if(encontrado) break;
     }
   }
   return list;

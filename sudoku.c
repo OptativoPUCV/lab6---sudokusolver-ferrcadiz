@@ -143,7 +143,7 @@ Node* DFS(Node* initial, int* cont){
   Stack* stack = createStack();
   push(stack, initial);
 
-  *cont = 0;
+  (*cont) = 0;
 
   while(is_empty(stack) == 0){
     Node* primerNodo = top(stack);
@@ -160,7 +160,7 @@ Node* DFS(Node* initial, int* cont){
       nodoActual = next(nodosAdyacentes);
     }
 
-    *cont++;
+    (*cont)++;
   }
   
   return NULL;

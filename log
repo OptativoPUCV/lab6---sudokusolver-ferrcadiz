@@ -209,3 +209,9 @@ sudoku.c:163:5: error: value computed is not used [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 354aad3
+Fri 06 Oct 2023 12:03:41 AM UTC: 
+ sudoku.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|4
+total_score: 10/70
+c453380
